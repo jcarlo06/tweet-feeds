@@ -1,61 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Twitter</title>
-	<link rel="stylesheet" href="/static/css/demo.css" type="text/css" /> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <title>Title</title>
 </head>
-<body>
-	<div id="twitterSearchApp">
-		<div id="mainColumn">
-			<div id="searchbar">
-				 
-				<div id="create-search">
-					<h1>Tweet Feeds</h1>
-					<div id="searchform">
-						<input id="search-query" type="text" />
-						<button id="submit-search" > Search</button>
-						<img class="loading-icon" src="/static/img/spinner.gif" alt="loading" />
-					</div>
-				</div>
-			</div>
-			<div id="container">
-				<div id="monitor">
-					<div id="twitter-feed"></div>
-				</div>
 
-			</div>
-			
-		</div>
-	</div>
-	
-	
-	
-    <script src="/static/lib/jquery.js"></script>
-    <script src="/static/lib/underscore.js"></script>
-    <script src="/static/lib/backbone.js"></script>
-    <script src="/static/lib/mustache.js"></script>
-    <script src="/static/app.js"></script>
-    
-    
-    
-    <script type="text/javascript">
-	(function ($) {
-		// Create our models
-		var query = new TwitterSearch();
-		
-		// Add views
-		var createSearchView = new CreateSearchView({
-			el: $("#create-search"),
-			model: query
-		});
-		
-		var tweetList = new TweetListView({
-			el: $("#twitter-feed"),
-			collection: query.displayedTweets
-		});
-		tweetList.render();
-	})(jQuery);
-    </script>
+<body>
+    Replace /templates/index.html file with the index.html from your twitter app assignment
 </body>
 </html>
